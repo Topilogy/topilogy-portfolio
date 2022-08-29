@@ -1,3 +1,47 @@
+@media screen and (max-width: 500px) {
+  header {
+    padding: 0;
+  }
+  header .right-header {
+    padding: 2rem;
+  }
+  .themes-btn {
+    height: 50px;
+    width: 50px;
+  }
+  .header-content {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
+    padding-bottom: 6rem;
+  }
+  .left-header .h-shape {
+    display: none;
+  }
+  .right-header {
+    -ms-grid-row: 1;
+    grid-row: 1;
+  }
+  .controlls {
+    top: auto;
+    bottom: 0;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+            transform: translateX(-50%);
+    width: 100%;
+    background-color: var(--color-grey-5);
+  }
+  .controlls .control {
+    margin: 1rem .3rem;
+  }
+}
+
 * {
   margin: 0%;
   padding: 0%;
@@ -315,8 +359,6 @@ section {
           justify-content: center;
   border-radius: 50%;
   padding: 1rem;
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
 }
 
 .main-btn::before {
@@ -326,14 +368,14 @@ section {
   right: 0;
   -webkit-transform: translateX(100%);
           transform: translateX(100%);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
   z-index: -1;
 }
 
 .main-btn:hover {
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
 }
 
 .main-btn:hover::before {
@@ -342,7 +384,36 @@ section {
   background-color: var(--color-secondary);
   -webkit-transform: translateX(0);
           transform: translateX(0);
-  -webkit-transition: all .2s ease-in-out;
-  transition: all .2s ease-in-out;
+  -webkit-transition: all .8s ease-in-out;
+  transition: all .8s ease-in-out;
+}
+
+.main-title {
+  text-align: center;
+}
+
+.main-title h2 {
+  position: relative;
+  text-transform: uppercase;
+  font-size: 4rem;
+  font-weight: 700;
+}
+
+.main-title h2 span {
+  color: var(--color-secondary);
+}
+
+.main-title h2 .bg-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  color: var(--color-grey-5);
+  -webkit-transition: all .4s ease-in-out;
+  transition: all .4s ease-in-out;
+  z-index: -1;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  font-weight: 800;
+  font-size: 5.3rem;
 }
 /*# sourceMappingURL=styles.css.map */
