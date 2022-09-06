@@ -56,7 +56,7 @@ a {
 }
 
 header {
-    min-height: 100vh;
+    height: 100vh;
     color: var(--color-white);
     overflow: hidden;
 }
@@ -182,7 +182,7 @@ section {
 .header-content {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    min-height: 100%;
+    height: 100%;
     .left-header {
         display: flex;
         align-items: center;
