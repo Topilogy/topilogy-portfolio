@@ -285,7 +285,7 @@ section {
                 transition: all .4s ease-in-out;
                 box-shadow: 1px 2px 15px rgba(0,0,0,.1);
                 &:hover {
-                    cursor: default;
+                    cursor: pointer;
                     transform: translateY(-5px);
                     border: 1px solid var(--color-secondary);
                     box-shadow: 1px 4px 15px rgba(0,0,0,.32);
