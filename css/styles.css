@@ -428,8 +428,8 @@ section {
 }
 
 .about-container .right-about .about-item .abt-text .large-text {
-  font-size: 2rem;
-  font-weight: 700;
+  font-size: 0.5rem;
+  font-weight: 100;
   color: var(--color-secondary);
 }
 
